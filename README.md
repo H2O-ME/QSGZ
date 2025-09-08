@@ -7,6 +7,7 @@
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
   [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/H2O-ME/qsgz)
+  [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol?ref=badge_shield)
 </div>
 
 
@@ -43,7 +44,6 @@
 ## 部署
 
 [![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2FH2O-ME%2Fqsgz.thw.lol)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol?ref=badge_shield)
 
 
 
@@ -315,16 +315,12 @@
 ## ❓︎ 问答
 ### 为什么做成纯前端网站？
 答：在本项目中，采用纯前端实现，1是降低开发复杂度：完整的网站通常包含后端服务、数据库等组件，若要从零构建一个功能完备的后端系统，不仅需要大量时间进行架构设计和接口开发，还需考虑数据格式、安全性、性能优化等问题。2是对于学生而言，云服务器费用过高。而纯前端几乎为零的运维成本显然更合适，虽然纯前端项目在内容更新上不够灵活，但经过了一次大规模代码重构过后，目前直观模块化的html结构使得内容维护的门槛已经大大降低。
-## 📄 许可证
 
-本项目使用 [MIT](LICENSE) 授权。
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol?ref=badge_large)
 
 ---
 
 <div align="center">
     <p>© 2025 THW 版权所有</p>
 </div>
-
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol?ref=badge_large)
