@@ -43,6 +43,7 @@
 ## 部署
 
 [![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2FH2O-ME%2Fqsgz.thw.lol)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol?ref=badge_shield)
 
 
 
@@ -323,3 +324,7 @@
 <div align="center">
     <p>© 2025 THW 版权所有</p>
 </div>
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FH2O-ME%2Fqsgz.thw.lol?ref=badge_large)
