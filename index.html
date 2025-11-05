@@ -64,71 +64,10 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <script src="../static/js/jquery.min.js"></script>
     <script src="../static/js/app.min.js"></script>
-    <script>
-        function closeNotice() {
-            const notice = document.getElementById('siteNotice');
-            if (notice) {
-                notice.style.display = 'none';
-                document.body.style.overflow = '';
-            }
-        }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../static/js/main.js"></script>
     <!-- 这段不应该能跑啊 -->
-    <script>
-        $(document).ready(function() {
-            $('.nav-link, .news-link').click(function(e) {
-                e.preventDefault();
-                const modalType = $(this).data('modal');
-                if (modalType) {
-                    showModal(modalType);
-                }
-            });
-            $('.close-btn').click(function() {
-                hideModal();
-            });
-            $('.modal-container').click(function(e) {
-                if ($(e.target).hasClass('modal-container')) {
-                    hideModal();
-                }
-            });
-            $(document).keydown(function(e) {
-                if (e.keyCode === 27) {
-                    hideModal();
-                }
-            });
-            function showModal(type) {
-                $('.modal-container').fadeIn(300);
-                $(`#${type}-modal`).fadeIn(300);
-                $('body').addClass('modal-open');
-            }
-            function hideModal() {
-                $('.modal-container').fadeOut(300);
-                $('.modal').fadeOut(300);
-                $('body').removeClass('modal-open');
-            }
-            $('.tab').click(function() {
-                $('.tab').removeClass('active');
-                $(this).addClass('active');
-                
-                const tabType = $(this).index();
-                if (tabType === 0) {
-                    $('.news-list').show();
-                } else {
-                }
-            });
-        });
-    </script>
-
-
-    <script>
-        function checkFirstVisit() {
-            if (!sessionStorage.getItem('visited')) {
-                sessionStorage.setItem('visited', 'true');
-                window.location.href = 'index.html';
-            }
-        }
-        window.onload = checkFirstVisit;
-    </script>
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support

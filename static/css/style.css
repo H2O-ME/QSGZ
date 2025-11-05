@@ -448,7 +448,6 @@ footer {
 
 /* 模态框样式 */
 .modal-container {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -458,6 +457,8 @@ footer {
     z-index: 1000;
     overflow-y: auto;
     padding-right: 15px;
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* 当模态框显示时隐藏页面滚动条 */
@@ -511,7 +512,6 @@ footer {
 
 /* 模态框内容样式 */
 .modal {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -522,6 +522,8 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     z-index: 1001;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .modal-content {
@@ -992,6 +994,7 @@ transition: opacity 0.4s ease;
     font-weight: 800;
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 15px 0;
     line-height: 1;
