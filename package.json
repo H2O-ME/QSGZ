@@ -1,0 +1,41 @@
+{
+  "name": "zibo-qisheng-highschool",
+  "version": "1.0.0",
+  "description": "淄博齐盛高级中学官方网站 - 现代化响应式学校网站",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server src --port=3000 --open=pages/",
+    "build": "tools\\build.bat",
+    "dev": "live-server src --port=3000 --open=pages/",
+    "preview": "live-server dist --port=4000 --open=/",
+    "clean": "tools\\clean.bat",
+    "clean:all": "tools\\clean.bat --all",
+    "lint": "echo 'Linting HTML and CSS...'",
+    "test": "echo 'Running tests...'"
+  },
+  "keywords": [
+    "school",
+    "education",
+    "highschool",
+    "responsive",
+    "website"
+  ],
+  "author": "淄博齐盛高级中学",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/H2O-ME/QSGZ.git"
+  },
+  "homepage": "https://www.zbqsgz.edu.cn/",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ]
+}

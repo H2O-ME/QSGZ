@@ -1,0 +1,31 @@
+{
+  "project": {
+    "name": "淄博齐盛高级中学官方网站",
+    "shortName": "齐盛高中官网",
+    "version": "1.0.0",
+    "description": "淄博齐盛高级中学现代化响应式官方网站"
+  },
+  "school": {
+    "name": "淄博齐盛高级中学",
+    "englishName": "Zibo Qisheng High School",
+    "address": "山东省淄博市张店区鲁泰大道469号",
+    "phone": "0533-3180577",
+    "website": "https://www.zbqsgz.edu.cn/",
+    "established": "2021年9月",
+    "area": "132亩",
+    "buildingArea": "68768平方米",
+    "students": "约1800人",
+    "teachers": "164人"
+  },
+  "build": {
+    "sourceDir": "src",
+    "outputDir": "dist",
+    "assetsDir": "assets",
+    "pagesDir": "pages"
+  },
+  "development": {
+    "port": 3000,
+    "previewPort": 4000,
+    "autoOpen": true
+  }
+}
