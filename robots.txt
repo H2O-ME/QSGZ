@@ -16,7 +16,7 @@ Allow: /teachers/      # 师资力量
 Crawl-delay: 10
 
 # 网站地图
-Sitemap: https://tianhw.top/sitemap.xml
+Sitemap: https://qsgz.tianhw.top/sitemap.xml
 
 # HTML 标签爬取设置
 User-agent: Baiduspider
