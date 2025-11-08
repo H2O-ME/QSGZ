@@ -5,11 +5,11 @@
   "main": "index.html",
   "scripts": {
     "start": "live-server src --port=3000 --open=pages/",
-    "build": "tools\\build.bat",
+    "build": "node tools/build.js",
     "dev": "live-server src --port=3000 --open=pages/",
     "preview": "live-server dist --port=4000 --open=/",
-    "clean": "tools\\clean.bat",
-    "clean:all": "tools\\clean.bat --all",
+    "clean": "node tools/clean.js",
+    "clean:all": "node tools/clean.js --all",
     "lint": "echo 'Linting HTML and CSS...'",
     "test": "echo 'Running tests...'"
   },
