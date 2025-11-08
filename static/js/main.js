@@ -1,6 +1,4 @@
-// 模态框处理
 $(document).ready(function() {
-    // 页面加载入场动画
     gsap.set(['header', '.main-nav', '.news', '.feature-section'], { 
         autoAlpha: 0, 
         y: 50 
@@ -37,10 +35,8 @@ $(document).ready(function() {
         ease: "power2.out" 
     });
 
-    // 滚动触发动画
     gsap.registerPlugin(ScrollTrigger);
     
-    // 师资队伍部分滚动动画
     gsap.set('.faculty .feature-card', { autoAlpha: 0, y: 100 });
     gsap.to('.faculty .feature-card', {
         scrollTrigger: {
@@ -56,7 +52,6 @@ $(document).ready(function() {
         ease: "power2.out"
     });
 
-    // 学生发展部分滚动动画
     gsap.set('.student-development .feature-card', { autoAlpha: 0, x: -100 });
     gsap.to('.student-development .feature-card', {
         scrollTrigger: {
@@ -72,7 +67,6 @@ $(document).ready(function() {
         ease: "power2.out"
     });
 
-    // 办学特色部分滚动动画
     gsap.set('.school-features .feature-card', { autoAlpha: 0, x: 100 });
     gsap.to('.school-features .feature-card', {
         scrollTrigger: {
@@ -88,7 +82,6 @@ $(document).ready(function() {
         ease: "power2.out"
     });
 
-    // 校园风光滚动动画
     gsap.set('.campus-gallery .gallery-item', { autoAlpha: 0, scale: 0.8 });
     gsap.to('.campus-gallery .gallery-item', {
         scrollTrigger: {
@@ -104,7 +97,6 @@ $(document).ready(function() {
         ease: "back.out(1.7)"
     });
 
-    // 页脚动画
     gsap.set('footer', { autoAlpha: 0, y: 50 });
     gsap.to('footer', {
         scrollTrigger: {
@@ -164,7 +156,6 @@ $(document).ready(function() {
         });
         $('body').removeClass('modal-open');
     }
-    // 悬停动画效果
     $('.nav-link').hover(
         function() {
             gsap.to($(this), { 
@@ -286,7 +277,6 @@ $(document).ready(function() {
         $('.tab').removeClass('active');
         $this.addClass('active');
         
-        // 标签切换动画
         gsap.to('.tab', { 
             duration: 0.2, 
             scale: 1, 

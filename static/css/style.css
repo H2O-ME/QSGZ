@@ -1,28 +1,25 @@
-/* 基础样式 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 隐藏全局滚动条 */
 html, body {
     overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE 和 Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari 和 Opera */
+    display: none; 
 }
 
-/* 确保内容不会因为滚动条隐藏而错位 */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.5;
     color: #333;
     background: #f5f5f5;
-    padding-right: 15px; /* 预留滚动条空间，防止内容错位 */
+    padding-right: 15px; 
 }
 
 .container {
@@ -32,10 +29,6 @@ body {
     box-sizing: border-box;
 }
 
-/* 页面标题样式 */
-/* 删除page-title相关样式 */
-
-/* 头部样式 */
 header {
     background: #c8141e;
     position: relative;
@@ -84,7 +77,6 @@ header {
     display: block;
 }
 
-/* 标题样式 */
 .logo-title h1 {
     color: #fff;
     font-size: 32px;
@@ -129,7 +121,6 @@ header {
     font-size: 16px;
 }
 
-/* 导航栏样式 */
 .main-nav {
     background: #b30e19;
     min-width: 1100px;
@@ -163,7 +154,6 @@ header {
     background: #9d1515;
 }
 
-/* 移动端导航 */
 .nav-toggle {
     display: none;
     background: none;
@@ -252,7 +242,6 @@ header {
     transform: rotate(-45deg) translate(5px, -6px);
 }
 
-/* 新闻列表样式 */
 .news {
     margin: 0;
     background: #fff;
@@ -348,18 +337,15 @@ header {
     margin-left: 20px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .news-list-container::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .news-list-container {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-/* 校园风光样式 */
 .campus {
     background: #fff;
     padding: 30px;
@@ -402,7 +388,6 @@ header {
     color: #666;
 }
 
-/* 页脚样式 */
 footer {
     background: #333;
     color: #fff;
@@ -411,7 +396,6 @@ footer {
     position: relative;
 }
 
-/* 页脚 Logo 动画样式 */
 .footer-logo {
     text-align: center;
     margin-bottom: 10px;
@@ -461,7 +445,6 @@ footer {
     color: #fff;
 }
 
-/* 响应式设计 */
 @media (max-width: 1200px) {
     .container {
     width: 100%;
@@ -520,17 +503,14 @@ footer {
         width: 80%;
     }
     
-    /* 手机端 header-image 等比例缩小 */
     .header-image {
         height: 60px;
     }
     
-    /* 手机端不显示 class-badge */
     .class-badge {
         display: none;
     }
     
-    /* 手机端不显示菜单 */
     .main-nav {
         display: none;
     }
@@ -538,8 +518,7 @@ footer {
     .mobile-nav {
         display: none;
     }
-}/* VR全景样式 */
-.vr-tour {
+}.vr-tour {
     background: #fff;
     padding: 20px;
     margin: 20px 0;
@@ -579,7 +558,6 @@ footer {
     transform: scale(1.01);
 }
 
-/* 模态框样式 */
 .modal-container {
     position: fixed;
     top: 0;
@@ -594,7 +572,6 @@ footer {
     opacity: 0;
 }
 
-/* 当模态框显示时隐藏页面滚动条 */
 .modal-open {
     overflow: hidden;
     position: fixed;
@@ -602,7 +579,6 @@ footer {
     height: 100%;
 }
 
-/* 模态框内容滚动 */
 .modal-content {
     max-height: 90vh;
     overflow-y: auto;
@@ -610,7 +586,6 @@ footer {
     margin: 20px;
 }
 
-/* 隐藏滚动条样式 - 彻底隐藏 */
 .modal-container {
     -ms-overflow-style: none;  /* IE 和 Edge */
     scrollbar-width: none;  /* Firefox */
@@ -629,7 +604,6 @@ footer {
     display: none;  /* Chrome, Safari 和 Opera */
 }
 
-/* 确保模态框显示时页面滚动条完全隐藏 */
 .modal-open {
     overflow: hidden;
     position: fixed;
@@ -643,7 +617,6 @@ footer {
     display: none;  /* Chrome, Safari 和 Opera */
 }
 
-/* 模态框内容样式 */
 .modal {
     position: fixed;
     top: 50%;
@@ -678,7 +651,6 @@ footer {
     color: #333;
 }
 
-/* 添加响应式支持 */
 @media (max-width: 480px) {
     .vr-container iframe {
         height: 300px;
@@ -697,7 +669,6 @@ footer {
     }
 }
 
-/* 英雄区域样式 */
 .hero-section {
     background: #fff;
     padding: 40px 0;
@@ -712,7 +683,6 @@ footer {
     align-items: start;
 }
 
-/* 班徽样式 */
 .class-badge {
     text-align: center;
     padding: 25px;
@@ -745,7 +715,6 @@ footer {
     font-size: 16px;
 }
 
-/* 特色区域样式 */
 .feature-section {
     background: #fff;
     padding: 30px 0;
@@ -759,7 +728,6 @@ footer {
     align-items: start;
 }
 
-/* 弹窗样式 */
 .modal-container {
     display: none;
     position: fixed;
@@ -843,12 +811,10 @@ footer {
     }
 }
 
-/* 当弹窗显示时禁止页面滚动 */
 body.modal-open {
     overflow: hidden;
 }
 
-/* 新闻弹窗特殊样式 */
 .modal-text ol,
 .modal-text ul {
     margin: 10px 0;
@@ -874,7 +840,6 @@ body.modal-open {
     color: #c8141e;
 }
 
-/* 统一主题色 */
 :root {
     --primary-color: #c8141e;
     --secondary-color: #2c3e50;
@@ -884,7 +849,6 @@ body.modal-open {
     --border-radius: 10px;
 }
 
-/* 优化特色卡片样式 */
 .feature-card {
     background: var(--light-bg);
     border-radius: var(--border-radius);
@@ -893,7 +857,6 @@ body.modal-open {
     border-top: 4px solid var(--primary-color);
 }
 
-/* 统一按钮样式 */
 .btn {
     background: var(--primary-color);
     color: #fff;
@@ -901,7 +864,6 @@ body.modal-open {
     transition: all 0.3s ease;
 }
 
-/* 特色板块整体样式优化 */
 .school-features {
     padding: 0;
     background: linear-gradient(135deg, var(--light-bg) 0%, #fff 100%);
@@ -921,7 +883,6 @@ body.modal-open {
     pointer-events: none;
 }
 
-/* 标题样式优化 */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -941,7 +902,6 @@ body.modal-open {
     border-radius: 2px;
 }
 
-/* 特色卡片网格布局优化 */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -950,7 +910,6 @@ body.modal-open {
     padding: 20px;
 }
 
-/* 特色卡片样式优化 */
 .feature-card {
     background: #fff;
     padding: 40px 30px;
@@ -961,7 +920,6 @@ body.modal-open {
     z-index: 1;
 }
 
-/* 学科组合照展示样式 */
 .subject-group-gallery {
     margin-top: 60px;
     display: grid;
@@ -987,7 +945,6 @@ body.modal-open {
     display: block;
 }
 
-/* Admission Modal Images */
 #admission-modal .modal-content {
     max-width: 900px;
     padding: 30px;
@@ -1033,7 +990,6 @@ body.modal-open {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     #admission-modal .modal-content {
         padding: 15px 10px;
@@ -1083,7 +1039,6 @@ transition: opacity 0.4s ease;
     color: #fff;
 }
 
-/* 图标样式优化 */
 .feature-icon {
     font-size: 3rem;
     margin-bottom: 25px;
@@ -1099,7 +1054,6 @@ transition: opacity 0.4s ease;
     transform: scale(1.1);
 }
 
-/* 统计数据样式优化 */
 .features-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1158,7 +1112,6 @@ transition: opacity 0.4s ease;
     margin-top: 5px;
 }
 
-/* 响应式优化 */
 @media screen and (max-width: 768px) {
     .school-features {
         padding: 50px 0;
@@ -1194,7 +1147,6 @@ transition: opacity 0.4s ease;
     }
 }
 
-/* 校园风光部分样式 */
 .campus-section {
     padding: 4rem 0;
     background: #fff;
@@ -1205,7 +1157,6 @@ transition: opacity 0.4s ease;
     margin-bottom: 3rem;
 }
 
-/* 校园风光图片展示样式 */
 .campus-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1214,7 +1165,6 @@ transition: opacity 0.4s ease;
     width: 100%;
 }
 
-/* 添加shot-on caption样式 */
 .shot-on-caption {
     text-align: right;
     color: #666;
@@ -1264,7 +1214,6 @@ transition: opacity 0.4s ease;
     border: none;
 }
 
-/* 适配不同屏幕尺寸 */
 @media screen and (max-width: 1200px) {
     .campus-gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -1277,7 +1226,6 @@ transition: opacity 0.4s ease;
     }
 }
 
-/* 校园风光模块样式 */
 .campus-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #fff 0%, var(--light-bg) 100%);
@@ -1296,7 +1244,6 @@ transition: opacity 0.4s ease;
     pointer-events: none;
 }
 
-/* 轮播图样式 */
 .campus-slider {
     position: relative;
     width: 100%;
@@ -1364,7 +1311,6 @@ transition: opacity 0.4s ease;
     transform: scale(1.2);
 }
 
-/* 校园环境卡片网格 */
 .campus-grid {
     margin-top: 60px;
     display: grid;
@@ -1408,8 +1354,6 @@ transition: opacity 0.4s ease;
     line-height: 1.6;
 }
 
-/* SEO优化相关样式 */
-/* 面包屑导航 */
 .breadcrumb {
     display: flex;
     padding: 10px 0;
@@ -1433,7 +1377,6 @@ transition: opacity 0.4s ease;
     color: #6c757d;
 }
 
-/* 优化文本可读性 */
 p, li {
     line-height: 1.6;
     margin-bottom: 1em;
@@ -1444,13 +1387,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-/* 优化链接可访问性 */
 a:focus {
     outline: 3px solid var(--primary-color);
     outline-offset: 2px;
 }
 
-/* 添加跳转到主要内容的链接 */
 .skip-to-main {
     position: absolute;
     left: -9999px;
@@ -1465,7 +1406,6 @@ a:focus {
     transform: translateX(-50%);
 }
 
-/* 网站提醒弹窗样式 */
 .site-notice {
     position: fixed;
     top: 0;
@@ -1555,18 +1495,15 @@ a:focus {
     margin-top: 15px;
 }
 
-/* 移除可能影响点击的样式 */
 .notice-btn:focus {
     outline: none;
 }
 
-/* 确保按钮在最上层 */
 .notice-btn {
     position: relative;
     z-index: 10001;
 }
 
-/* 页脚样式 */
 .site-footer {
     background: #f8f9fa;
     padding: 40px 0;
