@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./static/image/logob.png" alt="淄博齐盛高级中学" width="200">
+  <img src="./static/image/logob.webp" alt="淄博齐盛高级中学" width="200">
   <h1>淄博齐盛高级中学官网</h1>
   <p>现代化、响应式的学校官方网站，展示学校风采，提供信息服务</p>
   
-  [![GitHub stars](https://img.shields.io/github/stars/yourusername/ziboqishenghighschool?style=social)](https://github.com/yourusername/ziboqishenghighschool/stargazers)
+  [![GitHub stars](https://img.shields.io/github/stars/H2O-ME/QSGZ?style=social)](https://github.com/H2O-ME/QSGZ/stargazers)
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -30,8 +30,6 @@ zibo-qisheng-highschool/
 │   │   │   └── admission_notice.css # 录取通知书样式
 │   │   ├── js/                   # JavaScript文件
 │   │   │   ├── main.js           # 主脚本
-│   │   │   ├── app.min.js        # 应用脚本（压缩）
-│   │   │   ├── jquery.min.js     # jQuery库
 │   │   │   └── admission_notice.js # 录取通知书脚本
 │   │   ├── images/               # 图片资源
 │   │   │   ├── dy/               # 动态图片
@@ -44,7 +42,7 @@ zibo-qisheng-highschool/
 ├── dist/                         # 构建输出目录
 ├── config/                       # 配置文件目录
 ├── docs/                         # 项目文档
-├── tools/                        # 构建工具和脚本
+├── tools/                        # 构建工具和脚本 (build.js, clean.js)
 ├── package.json                  # Node.js项目配置
 ├── README.md                     # 项目说明
 ├── .gitignore                    # Git忽略文件
@@ -55,79 +53,113 @@ zibo-qisheng-highschool/
 ## 🎨 首页自定义指南
 
 ### 1. 基本信息修改
-打开 `index.html` 文件，找到以下部分进行自定义：
+打开 `src/pages/index.html` 文件，找到以下部分进行自定义：
 
 ```html
-<!-- 网站标题 -->
-<title>淄博齐盛高级中学 - 淄博实验中学集团成员校</title>
+<!-- SEO Meta Tags -->
+<title>淄博齐盛高级中学 - 淄博实验中学集团成员校 | 现代化优质高中</title>
 
-<!-- 主要元描述 -->
-<meta name="description" content="淄博齐盛高级中学，2021年秋季启用的现代化公办高中...">
+<meta name="title" content="淄博齐盛高级中学 - 淄博实验中学集团成员校 | 现代化优质高中">
+<meta name="description" content="淄博齐盛高级中学，2021年秋季启用的现代化公办高中，位于张店区鲁泰大道469号。作为淄博实验中学核心校集团成员，实施紧密型集团化办学模式，拥有164名教职工，致力于培养德智体美劳全面发展的优秀人才。">
+```
 
-<!-- 导航菜单 -->
-<nav class="main-nav">
+### 2. 导航菜单修改
+在 `index.html` 中找到导航栏部分：
+
+```html
+<nav class="main-nav" role="navigation">
     <div class="container">
         <ul>
-            <li><a href="/" class="nav-link">首页</a></li>
+            <li><a href="/" class="nav-link" aria-label="返回首页">首页</a></li>
             <li><a href="/about" class="nav-link" data-modal="intro">学校简介</a></li>
-            <!-- 其他导航项 -->
+            <li><a href="/profile" class="nav-link" data-modal="info">学校概况</a></li>
+            <li><a href="/leadership" class="nav-link" data-modal="leadership">学校领导</a></li>
+            <li><a href="/teachers" class="nav-link" data-modal="teachers">师资队伍</a></li>
+            <li><a href="/student" class="nav-link" data-modal="students">学生发展</a></li>
+            <li><a href="/features" class="nav-link" data-modal="features">办学特色</a></li>
+            <li><a href="/admission" class="nav-link" data-modal="admission">招生简章</a></li>
         </ul>
     </div>
 </nav>
 ```
 
-### 2. 轮播图修改
-在 `index.html` 中定位到轮播图部分，更新图片路径和描述：
-
-```html
-<div class="slider">
-    <div class="slide">
-        <img src="./static/image/slide1.jpg" alt="校园风光">
-        <div class="slide-content">
-            <h3>欢迎来到淄博齐盛高级中学</h3>
-            <p>追求卓越，成就未来</p>
-        </div>
-    </div>
-    <!-- 添加更多幻灯片 -->
-</div>
-```
-
-### 3. 新闻动态更新
-在 `index.html` 中找到新闻部分，按需修改：
+### 3. 新闻内容更新
+在 `index.html` 中找到新闻部分：
 
 ```html
 <section class="news">
     <div class="container">
-        <h2>新闻动态</h2>
         <div class="news-grid">
-            <article class="news-item">
-                <div class="news-date">2025-07-15</div>
-                <h3><a href="#" class="news-link">2025年招生简章发布</a></h3>
-                <p>我校2025年招生工作正式启动，欢迎优秀学子报考...</p>
-            </article>
-            <!-- 更多新闻项 -->
+            <div class="news-image">
+                <img src="/assets/image/8.webp" alt="校园新闻" class="news-banner">
+            </div>
+            <div class="news-content">
+                <div class="news-tabs">
+                    <div class="tab active">学校新闻</div>
+                    <div class="tab">通知公告</div>
+                </div>
+                <div class="news-list-container">
+                    <ul class="news-list">
+                        <li><a href="#" class="news-link" data-modal="news1">新闻标题1</a></li>
+                        <li><a href="#" class="news-link" data-modal="news2">新闻标题2</a></li>
+                        <!-- 更多新闻项 -->
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 ```
 
-### 4. 联系方式更新
-在页面底部找到联系方式部分进行修改：
+### 4. 模态框内容修改
+每个导航项对应一个模态框，内容在对应的 `<div class="modal" id="modal-id">` 中。例如：
+
+```html
+<div class="modal" id="intro-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>学校简介</h2>
+        <div class="modal-text">
+            <!-- 学校简介内容 -->
+        </div>
+    </div>
+</div>
+```
+
+### 5. 页脚信息更新
+在页面底部找到页脚部分：
 
 ```html
 <footer class="site-footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>联系我们</h4>
-                <p>地址：山东省淄博市张店区鲁泰大道469号</p>
-                <p>电话：0533-12345678</p>
-                <p>邮箱：info@zbqsgz.edu.cn</p>
-            </div>
-            <!-- 其他底部信息 -->
+        <div class="footer-logo">
+            <img src="/assets/image/13.gif" alt="齐盛高中 Logo 动画" class="footer-logo-img">
+        </div>
+        <div class="copyright">
+            <p>学校咨询电话：3180577,3189080,3180566 | 学校微信公众号：淄博齐盛高级中学</p>
         </div>
     </div>
 </footer>
+```
+
+### 6. 图片资源替换
+将新的图片放入 `src/assets/image/` 目录，然后更新相应的 `src` 属性。例如：
+
+```html
+<img src="/assets/image/new-image.webp" alt="新图片描述">
+```
+
+### 7. 结构化数据更新
+在 `index.html` 中找到 Schema.org 结构化数据部分，更新学校信息：
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "淄博齐盛高级中学",
+  // 更新其他字段...
+}
+</script>
 ```
 
 ## 🚀 特色功能
@@ -187,7 +219,3 @@ npm run preview
 本项目采用 [MIT](LICENSE) 开源协议
 
 ---
-
-<div align="center">
-    <p>© 2025 淄博齐盛高级中学 版权所有</p>
-</div>

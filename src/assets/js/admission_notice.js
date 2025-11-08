@@ -27,8 +27,8 @@ $(document).ready(function() {
         }).then(canvas => {
             // Create download link
             const link = document.createElement('a');
-            link.download = `录取通知书_${studentName || '学生'}.png`;
-            link.href = canvas.toDataURL('image/png');
+            link.download = `录取通知书_${studentName || '学生'}.webp`;
+            link.href = canvas.toDataURL('image/webp');
             link.click();
         }).catch(err => {
             console.error('Error generating image:', err);
